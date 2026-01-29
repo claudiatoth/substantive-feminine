@@ -1508,38 +1508,53 @@
     <!-- JAVASCRIPT -->
     <script>
         // ========== AUDIO MANAGEMENT ==========
-        let currentAudio = null;
+        // Variable globală pentru tracking audio
+let currentAudio = null;
 
-        function playAudio(file, button) {
-            // Stop current audio if playing
-            if (currentAudio) {
-                currentAudio.pause();
-                currentAudio.currentTime = 0;
-                
-                // Reset all buttons to 🔊
-                const allButtons = document.querySelectorAll('.audio-btn span:first-child');
-                allButtons.forEach(btn => btn.textContent = '🔊');
-            }
-
-            // If clicking the same button, just stop
-            const icon = button.querySelector('span:first-child');
-            if (currentAudio && currentAudio.src.includes(file) && icon.textContent === '⏸️') {
-                icon.textContent = '🔊';
-                currentAudio = null;
-                return;
-            }
-
-            // Play new audio
-            currentAudio = new Audio(file);
-            icon.textContent = '⏸️';
-            
-            currentAudio.play();
-            
-            currentAudio.onended = function() {
-                icon.textContent = '🔊';
-                currentAudio = null;
-            };
+function playAudio(f, buttonElement) { 
+    // Dacă există audio care rulează
+    if (currentAudio && !currentAudio.paused) {
+        // STOP audio-ul curent
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        
+        // Resetează toate butoanele la 🔊
+        document.querySelectorAll('.audio-btn').forEach(btn => {
+            btn.innerHTML = btn.innerHTML.replace('⏸️', '🔊').replace('⏹️', '🔊');
+        });
+        
+        // Dacă e același buton, doar oprește
+        if (currentAudio.src.endsWith(f)) {
+            currentAudio = null;
+            return;
         }
+    }
+    
+    // Creează și pornește noul audio
+    currentAudio = new Audio(f);
+    
+    // Schimbă iconița în STOP când începe
+    currentAudio.onplay = () => {
+        if (buttonElement) {
+            buttonElement.innerHTML = buttonElement.innerHTML.replace('🔊', '⏸️');
+        }
+    };
+    
+    // Resetează iconița când se termină
+    currentAudio.onended = () => {
+        if (buttonElement) {
+            buttonElement.innerHTML = buttonElement.innerHTML.replace('⏸️', '🔊');
+        }
+        currentAudio = null;
+    };
+    
+    currentAudio.play().catch(e => {
+        alert('Fișierul audio ' + f + ' nu a fost găsit.');
+        if (buttonElement) {
+            buttonElement.innerHTML = buttonElement.innerHTML.replace('⏸️', '🔊');
+        }
+    });
+}
 
         // ========== MENU TOGGLE ==========
         function toggleMenu() {
