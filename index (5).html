@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <title>Genul Feminin în Germană - Lecție Interactivă | Claudia Toth</title>
+    
+    <style>
+        /* ========== RESET & BASICS ========== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #1f2937; 
+            background: linear-gradient(to bottom, #f0fdf4, #ffffff); 
+            min-height: 100vh; 
+        }
+        
+        /* ========== HEADER STICKY ========== */
+        .header { 
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%); 
+            color: white; 
+            padding: 20px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        .header-content { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .logo { display: flex; align-items: center; gap: 12px; }
+        .logo-icon { font-size: 28px; }
+        .logo-text h1 { font-size: 24px; font-weight: bold; margin: 0; }
+        .logo-text p { 
+            font-size: 11px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            margin: 0; 
+            opacity: 0.9; 
+        }
+        
+        /* ========== HAMBURGER MENU ========== */
+        .hamburger-menu { 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            cursor: pointer; 
+            padding: 10px 20px; 
+            background: rgba(255, 255, 255, 0.2); 
+            border-radius: 8px; 
+            transition: all 0.3s ease; 
+        }
+        .hamburger-menu:hover { background: rgba(255, 255, 255, 0.3); }
+        
+        /* ========== NAVIGATION MENU ========== */
+        .nav-menu { 
+            max-height: 0; 
+            overflow: hidden; 
+            transition: max-height 0.3s ease; 
+            background: white; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+        .nav-menu.active { max-height: 500px; }
+        .nav-menu ul { 
+            list-style: none; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        .nav-menu li { margin: 0; }
+        .nav-menu a { 
+            color: #10b981; 
+            text-decoration: none; 
+            font-weight: 500; 
+            transition: color 0.3s ease; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+        }
+        .nav-menu a:hover { color: #059669; }
+        
+        /* ========== CONTAINER & SECTIONS ========== */
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .title-section { 
+            text-align: center; 
+            margin-bottom: 40px; 
+            padding: 40px 20px; 
+            background: white; 
+            border-radius: 12px; 
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .title-section h1 { color: #10b981; font-size: 32px; margin-bottom: 10px; }
+        .title-section p { color: #6b7280; font-size: 18px; }
+        
+        .section { 
+            background: white; 
+            padding: 30px; 
+            margin-bottom: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .section h2 { 
+            color: #10b981; 
+            font-size: 24px; 
+            margin-bottom: 20px; 
+            border-bottom: 3px solid #10b981; 
+            padding-bottom: 10px; 
+        }
+        
+        /* ========== LEVEL TAGS ========== */
+        .level-tag { 
+            display: inline-block; 
+            background: #059669; 
+            color: white; 
+            padding: 4px 12px; 
+            border-radius: 20px; 
+            font-size: 12px; 
+            font-weight: bold; 
+            margin-left: 10px; 
+        }
+        
+        /* ========== DROPDOWNS ========== */
+        .dropdown { 
+            border: 2px solid #10b981; 
+            border-radius: 12px; 
+            margin-bottom: 20px; 
+            overflow: hidden; 
+        }
+        .dropdown-header { 
+            background: #10b981; 
+            color: white; 
+            padding: 15px 20px; 
+            cursor: pointer; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            font-weight: bold; 
+            transition: background 0.3s ease; 
+        }
+        .dropdown-header:hover { background: #059669; }
+        .dropdown-arrow { transition: transform 0.3s ease; }
+        .dropdown-arrow.active { transform: rotate(180deg); }
+        .dropdown-content { 
+            max-height: 0; 
+            overflow: hidden; 
+            transition: max-height 0.3s ease; 
+            padding: 0 20px; 
+        }
+        .dropdown-content.active { max-height: 3000px; padding: 20px; }
+        
+        /* ========== TABLES ========== */
+        .table-container { overflow-x: auto; margin: 20px 0; position: relative; }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            background: white; 
+            min-width: 500px; 
+        }
+        table thead { background: #10b981; color: white; }
+        table th, table td { 
+            padding: 12px; 
+            text-align: left; 
+            border: 1px solid #e5e7eb; 
+        }
+        table tbody tr:nth-child(even) { background: #f3f4f6; }
+        
+        /* ========== AUDIO BUTTONS ========== */
+        .audio-btn { 
+            background: #10b981; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-size: 14px; 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px; 
+            transition: all 0.3s ease; 
+            margin: 10px 10px 10px 0; 
+        }
+        .audio-btn:hover { 
+            background: #059669; 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3); 
+        }
+        
+        /* ========== QUESTIONS & INPUTS ========== */
+        .question { margin: 15px 0; }
+        .question label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-weight: 500; 
+        }
+        .question input { 
+            width: 100%; 
+            padding: 12px; 
+            border: 2px solid #e5e7eb; 
+            border-radius: 8px; 
+            font-size: 14px; 
+            font-family: inherit; 
+            transition: border-color 0.3s ease; 
+        }
+        .question input:focus { 
+            outline: none; 
+            border-color: #10b981; 
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1); 
+        }
+        
+        /* ========== BUTTONS ========== */
+        .btn-group { 
+            display: flex; 
+            gap: 10px; 
+            margin-top: 20px; 
+            flex-wrap: wrap; 
+        }
+        .btn { 
+            padding: 12px 24px; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 14px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: all 0.3s ease; 
+        }
+        .btn-primary { background: #10b981; color: white; }
+        .btn-primary:hover { 
+            background: #059669; 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3); 
+        }
+        .btn-secondary { background: #6b7280; color: white; }
+        .btn-secondary:hover { 
+            background: #4b5563; 
+            transform: translateY(-2px); 
+        }
+        
+        /* ========== FEEDBACK MESSAGES ========== */
+        .feedback { 
+            margin-top: 20px; 
+            padding: 15px; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            display: none; 
+            position: sticky; 
+            top: 80px; 
+            z-index: 100; 
+        }
+        .feedback.success { 
+            background: #d1fae5; 
+            color: #065f46; 
+            border: 2px solid #10b981; 
+            display: block; 
+        }
+        .feedback.error { 
+            background: #fee2e2; 
+            color: #991b1b; 
+            border: 2px solid #ef4444; 
+            display: block; 
+        }
+        
+        /* ========== CORRECT/INCORRECT STYLES ========== */
+        .correct { 
+            border-color: #10b981 !important; 
+            background: #d1fae5 !important; 
+        }
+        .incorrect { 
+            border-color: #ef4444 !important; 
+            background: #fee2e2 !important; 
+        }
+        .correct-answer { 
+            color: #059669; 
+            font-size: 12px; 
+            margin-top: 5px; 
+            font-weight: bold; 
+        }
+        
+        /* ========== WARNING BOXES ========== */
+        .warning-box { 
+            background: #fef3c7; 
+            border-left: 4px solid #f59e0b; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 8px; 
+        }
+        .warning-box strong { color: #92400e; }
+        
+        /* ========== INFO BOXES ========== */
+        .info-box { 
+            background: #dbeafe; 
+            border-left: 4px solid #3b82f6; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 8px; 
+        }
+        .info-box strong { color: #1e40af; }
+        
+        /* ========== FINAL SECTION ========== */
+        .final-section {
+            background: white;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .final-section h2 {
+            color: #10b981;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        
+        .final-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .final-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #10b981;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        
+        .final-link:hover {
+            background: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+        }
+        
+        .footer-message {
+            margin: 30px 0 10px 0;
+            font-size: 20px;
+            color: #10b981;
+            font-weight: bold;
+        }
+        
+        .copyright {
+            color: #6b7280;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        /* ========== SCROLL TO TOP ========== */
+        .scroll-to-top { 
+            position: fixed; 
+            bottom: 30px; 
+            right: 30px; 
+            background: #10b981; 
+            color: white; 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            display: none; 
+            align-items: center; 
+            justify-content: center; 
+            cursor: pointer; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            transition: all 0.3s ease; 
+            z-index: 1000; 
+            border: none; 
+            font-size: 24px; 
+        }
+        .scroll-to-top:hover { 
+            background: #059669; 
+            transform: translateY(-5px); 
+        }
+        
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 768px) {
+            .header-content { flex-direction: column; gap: 15px; }
+            .logo-text h1 { font-size: 20px; }
+            .title-section h1 { font-size: 24px; }
+            .section { padding: 20px; }
+            .btn-group { flex-direction: column; }
+            .btn { width: 100%; }
+            .final-links { flex-direction: column; }
+            .final-link { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER STICKY -->
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">ʚଓ</div>
+                <div class="logo-text">
+                    <h1>Claudia Toth</h1>
+                    <p>Curs Autorizat de Limba Germană</p>
+                </div>
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span>☰</span>
+                <span>Meniu</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <div class="nav-menu" id="navMenu">
+        <ul>
+            <li><a href="#introducere">ʚଓ Introducere</a></li>
+            <li><a href="#teorie">ʚଓ Teorie</a></li>
+            <li><a href="#terminatii">ʚଓ Terminații</a></li>
+            <li><a href="#exercitii">ʚଓ Exerciții</a></li>
+            <li><a href="#vocabular">ʚଓ Vocabular</a></li>
+            <li><a href="flashcards.html">ʚଓ Flashcards</a></li>
+            <li><a href="../werden/test-final.html">ʚଓ Test Final</a></li>
+            <li><a href="https://yaz5dfqyx89.typeform.com/to/IOLr1UEI" target="_blank">ʚଓ Sondaj Feedback</a></li>
+            <li><a href="genul-feminin.pdf" download>ʚଓ Descarcă PDF</a></li>
+        </ul>
+    </div>
+
+    <!-- CONTAINER PRINCIPAL -->
+    <div class="container">
+        
+        <!-- TITLU SECȚIUNE -->
+        <div class="title-section">
+            <h1>ʚଓ Genul Feminin în Limba Germană</h1>
+            <p>Învață toate terminațiile feminine și stăpânește genul substantivelor! <span class="level-tag">A1-B1</span></p>
+        </div>
+
+        <!-- SECȚIUNE INTRODUCERE -->
+        <div class="section" id="introducere">
+            <h2>ʚଓ Introducere</h2>
+            
+            <!-- DROPDOWN INTRODUCERE -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Ce vei învăța în această lecție</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="info-box">
+                        <strong>ʚଓ Ce vei învăța în această lecție:</strong>
+                <ul style="margin-top: 10px;">
+                    <li>✅ Articolul <strong>die</strong> și când se folosește</li>
+                    <li>✅ Toate terminațiile care indică genul feminin</li>
+                    <li>✅ Excepțiile importante de memorat</li>
+                    <li>✅ Peste 150 de substantive feminine cu traduceri</li>
+                    <li>✅ Categorii semantice (flori, avioane, numere)</li>
+                </ul>
+            </div>
+
+            <p style="margin: 20px 0;">
+                În limba germană, substantivele feminine sunt marcate prin articolul <strong style="color: #10b981;">die</strong> 
+                la nominativ și acuzativ. Genul feminin se poate recunoaște după anumite <strong>terminații specifice</strong>, 
+                care facilitează foarte mult învățarea limbii germane.
+            </p>
+
+            <p style="margin: 20px 0;">
+                <strong style="color: #10b981;">Avantajul memorării terminațiilor:</strong> 
+                Odată ce știi terminațiile feminine, vei putea identifica genul a mii de cuvinte fără să le memorezi individual!
+            </p>
+
+                    <button class="audio-btn" onclick="playAudio('audio/01-intro.mp3', this)">
+                        <span>🔊</span>
+                        <span>Ascultă introducerea</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECȚIUNE TEORIE -->
+        <div class="section" id="teorie">
+            <h2>ʚଓ Teorie - Reguli Generale</h2>
+
+            <!-- DROPDOWN 1: Articolul DIE -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Articolul "die" și declinarea sa</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p style="margin-bottom: 15px;">
+                        Articolul hotărât feminin <strong style="color: #10b981;">die</strong> se folosește pentru toate 
+                        substantivele feminine la singular în cazurile nominativ și acuzativ.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Caz</th>
+                                    <th>Articol</th>
+                                    <th>Exemplu</th>
+                                    <th>Traducere</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Nominativ</strong></td>
+                                    <td>die</td>
+                                    <td>die Frau</td>
+                                    <td>femeia</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Acuzativ</strong></td>
+                                    <td>die</td>
+                                    <td>die Frau</td>
+                                    <td>femeia</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dativ</strong></td>
+                                    <td>der</td>
+                                    <td>der Frau</td>
+                                    <td>femeii</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Genitiv</strong></td>
+                                    <td>der</td>
+                                    <td>der Frau</td>
+                                    <td>femeii</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/02-articol-die.mp3', this)">
+                        <span>🔊</span>
+                        <span>Ascultă declinarea</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- DROPDOWN 2: Categorii semantice -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Categorii semantice feminine</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p style="margin-bottom: 15px;">
+                        Anumite categorii de substantive sunt <strong>întotdeauna feminine</strong> după sensul lor:
+                    </p>
+                    
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="margin: 10px 0;">
+                            <strong style="color: #10b981;">📊 Numerele:</strong> 
+                            die Eins (unu), die Zwei (doi), die Drei (trei), die Million (milionul)
+                        </li>
+                        <li style="margin: 10px 0;">
+                            <strong style="color: #10b981;">🌳 Majoritatea arborilor fructiferi:</strong> 
+                            die Birne (părul), die Kirsche (cireșul), die Pflaume (prunul)
+                            <br><em style="color: #ef4444;">Excepții: der Apfel (mărul), der Pfirsich (piersicul)</em>
+                        </li>
+                        <li style="margin: 10px 0;">
+                            <strong style="color: #10b981;">✈️ Avioanele și navele:</strong> 
+                            die Boeing, die Titanic, die Lufthansa
+                        </li>
+                        <li style="margin: 10px 0;">
+                            <strong style="color: #10b981;">🏍️ Motocicletele:</strong> 
+                            die Harley, die Kawasaki, die Vespa
+                        </li>
+                        <li style="margin: 10px 0;">
+                            <strong style="color: #10b981;">🚬 Țigările:</strong> 
+                            die Marlboro, die Camel
+                        </li>
+                        <li style="margin: 10px 0;">
+                            <strong style="color: #10b981;">🌹 Majoritatea florilor:</strong> 
+                            die Rose (trandafirul), die Tulpe (lalele), die Nelke (garoafa)
+                        </li>
+                        <li style="margin: 10px 0;">
+                            <strong style="color: #10b981;">👩 Persoane de sex feminin:</strong> 
+                            die Frau (femeia), die Mutter (mama), die Tochter (fiica), die Schwester (sora)
+                        </li>
+                    </ul>
+
+                    <button class="audio-btn" onclick="playAudio('audio/03-categorii.mp3', this)">
+                        <span>🔊</span>
+                        <span>Ascultă categoriile</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- DROPDOWN 3: Importanța terminațiilor -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ De ce sunt importante terminațiile?</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p style="margin-bottom: 15px;">
+                        Terminațiile sunt cea mai sigură metodă de a recunoaște genul substantivelor în germană. 
+                        În comparație cu memorarea individuală a fiecărui substantiv, învățarea terminațiilor 
+                        îți permite să identifici automat genul a <strong>mii de cuvinte</strong>!
+                    </p>
+                    
+                    <div class="info-box">
+                        <strong>💡 Sfat important:</strong> Unele terminații sunt <strong>100% sigure</strong> 
+                        (de exemplu: -heit, -keit, -schaft, -ion), în timp ce altele au excepții rare 
+                        (de exemplu: -e, -ik, -ur). Merită să înveți și excepțiile pentru a fi perfect precis!
+                    </div>
+
+                    <p style="margin-top: 15px;">
+                        <strong>Exemple de productivitate:</strong>
+                    </p>
+                    <ul>
+                        <li>Terminația <strong>-heit</strong> → automat feminine: Freiheit, Gesundheit, Schönheit...</li>
+                        <li>Terminația <strong>-ung</strong> → aproape toate feminine: Hoffnung, Zeitung, Prüfung...</li>
+                        <li>Terminația <strong>-ion</strong> → 100% feminine: Nation, Station, Tradition...</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECȚIUNE TERMINAȚII -->
+        <div class="section" id="terminatii">
+            <h2>ʚଓ Terminațiile Feminine</h2>
+            
+            <p style="margin-bottom: 20px;">
+                Următoarele terminații indică <strong style="color: #10b981;">întotdeauna</strong> sau 
+                <strong style="color: #10b981;">în majoritatea cazurilor</strong> genul feminin:
+            </p>
+
+            <!-- TERMINAȚIA -E -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -e (MAJORITATEA feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Majoritatea substantivelor terminate în <strong>-e</strong> sunt feminine. 
+                        Aceasta este una dintre cele mai importante reguli!
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Liebe</td><td>dragostea</td></tr>
+                                <tr><td>die Gemeinde</td><td>comunitatea</td></tr>
+                                <tr><td>die Schärfe</td><td>iuțeala</td></tr>
+                                <tr><td>die Melodie</td><td>melodia</td></tr>
+                                <tr><td>die Lampe</td><td>lampa</td></tr>
+                                <tr><td>die Blume</td><td>floarea</td></tr>
+                                <tr><td>die Straße</td><td>strada</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="warning-box">
+                        <strong>⚠️ Excepții importante:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>der Junge (băiatul)</li>
+                            <li>der Löwe (leul)</li>
+                            <li>das Auge (ochiul)</li>
+                            <li>das Ende (sfârșitul)</li>
+                        </ul>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/04-terminatie-e.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -e</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIA -HEIT -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -heit (100% feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Substantivele terminate în <strong>-heit</strong> sunt <strong style="color: #10b981;">ÎNTOTDEAUNA feminine</strong>. 
+                        Această terminație formează substantive abstracte din adjective.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                    <th>De la adjectivul</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Freiheit</td><td>libertatea</td><td>frei (liber)</td></tr>
+                                <tr><td>die Gesundheit</td><td>sănătatea</td><td>gesund (sănătos)</td></tr>
+                                <tr><td>die Schönheit</td><td>frumusețea</td><td>schön (frumos)</td></tr>
+                                <tr><td>die Dummheit</td><td>prostia</td><td>dumm (prost)</td></tr>
+                                <tr><td>die Dunkelheit</td><td>întunericul</td><td>dunkel (întunecat)</td></tr>
+                                <tr><td>die Gewohnheit</td><td>obișnuința</td><td>gewohnt (obișnuit)</td></tr>
+                                <tr><td>die Weisheit</td><td>înțelepciunea</td><td>weise (înțelept)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>💡 Truc de memorare:</strong> -heit vine de la adjectivul "frei" → "Freiheit". 
+                        Gândește la "libertate" în română - tot feminin!
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/05-terminatie-heit.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -heit</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIA -KEIT / -IGKEIT -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -keit / -igkeit (100% feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Substantivele terminate în <strong>-keit</strong> sau <strong>-igkeit</strong> sunt 
+                        <strong style="color: #10b981;">ÎNTOTDEAUNA feminine</strong>. 
+                        Se formează din adjective terminate în -ig, -lich, -sam, -bar.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                    <th>De la adjectivul</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Pünktlichkeit</td><td>punctualitatea</td><td>pünktlich (punctual)</td></tr>
+                                <tr><td>die Möglichkeit</td><td>posibilitatea</td><td>möglich (posibil)</td></tr>
+                                <tr><td>die Geschwindigkeit</td><td>viteza</td><td>geschwind (rapid)</td></tr>
+                                <tr><td>die Dankbarkeit</td><td>recunoștința</td><td>dankbar (recunoscător)</td></tr>
+                                <tr><td>die Aufmerksamkeit</td><td>atenția</td><td>aufmerksam (atent)</td></tr>
+                                <tr><td>die Flüssigkeit</td><td>lichidul</td><td>flüssig (lichid)</td></tr>
+                                <tr><td>die Tätigkeit</td><td>activitatea</td><td>tätig (activ)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/06-terminatie-keit.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -keit</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIA -UNG -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -ung (APROAPE TOATE feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Substantivele terminate în <strong>-ung</strong> sunt <strong style="color: #10b981;">aproape ÎNTOTDEAUNA feminine</strong>. 
+                        Se formează din verbe și exprimă acțiuni sau rezultate.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                    <th>De la verbul</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Hoffnung</td><td>speranța</td><td>hoffen (a spera)</td></tr>
+                                <tr><td>die Kleidung</td><td>îmbrăcămintea</td><td>kleiden (a îmbrăca)</td></tr>
+                                <tr><td>die Lösung</td><td>soluția</td><td>lösen (a rezolva)</td></tr>
+                                <tr><td>die Ordnung</td><td>ordinea</td><td>ordnen (a ordona)</td></tr>
+                                <tr><td>die Prüfung</td><td>examenul</td><td>prüfen (a examina)</td></tr>
+                                <tr><td>die Zeitung</td><td>ziarul</td><td>zeiten (a raporta)</td></tr>
+                                <tr><td>die Wohnung</td><td>apartamentul</td><td>wohnen (a locui)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="warning-box">
+                        <strong>⚠️ Excepții rare:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>der Dung (gunoiul de grajd)</li>
+                            <li>der Schwung (avântul)</li>
+                            <li>der Sprung (săritura)</li>
+                        </ul>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/07-terminatie-ung.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -ung</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIA -SCHAFT -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -schaft (100% feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Substantivele terminate în <strong>-schaft</strong> sunt <strong style="color: #10b981;">ÎNTOTDEAUNA feminine</strong>. 
+                        Exprimă relații, grupuri sau stări.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Freundschaft</td><td>prietenia</td></tr>
+                                <tr><td>die Landschaft</td><td>peisajul</td></tr>
+                                <tr><td>die Mannschaft</td><td>echipa</td></tr>
+                                <tr><td>die Wissenschaft</td><td>știința</td></tr>
+                                <tr><td>die Gesellschaft</td><td>societatea</td></tr>
+                                <tr><td>die Wirtschaft</td><td>economia</td></tr>
+                                <tr><td>die Partnerschaft</td><td>parteneriatul</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/08-terminatie-schaft.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -schaft</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIA -EI / -EREI -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -ei / -erei (100% feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Substantivele terminate în <strong>-ei</strong> sau <strong>-erei</strong> sunt 
+                        <strong style="color: #10b981;">ÎNTOTDEAUNA feminine</strong>. 
+                        Indică locuri de muncă, profesii sau activități repetitive.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Bäckerei</td><td>brutăria</td></tr>
+                                <tr><td>die Konditorei</td><td>cofetăria</td></tr>
+                                <tr><td>die Malerei</td><td>pictura</td></tr>
+                                <tr><td>die Metzgerei</td><td>măcelăria</td></tr>
+                                <tr><td>die Tischlerei</td><td>tâmplăria</td></tr>
+                                <tr><td>die Brauerei</td><td>fabrica de bere</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>💡 Bonus:</strong> Numele de țări terminate în -ei sunt de asemenea feminine: 
+                        die Mongolei, die Slowakei, die Türkei
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/09-terminatie-ei.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -ei</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIA -ION -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -ion (100% feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Substantivele terminate în <strong>-ion</strong> sunt <strong style="color: #10b981;">ÎNTOTDEAUNA feminine</strong>. 
+                        Sunt de obicei cuvinte internaționale.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Lektion</td><td>lecția</td></tr>
+                                <tr><td>die Nation</td><td>națiunea</td></tr>
+                                <tr><td>die Station</td><td>stația</td></tr>
+                                <tr><td>die Tradition</td><td>tradiția</td></tr>
+                                <tr><td>die Information</td><td>informația</td></tr>
+                                <tr><td>die Diskussion</td><td>discuția</td></tr>
+                                <tr><td>die Produktion</td><td>producția</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/10-terminatie-ion.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -ion</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIILE -ANZ / -ENZ -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminațiile -anz / -enz (100% feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Substantivele terminate în <strong>-anz</strong> sau <strong>-enz</strong> sunt 
+                        <strong style="color: #10b981;">ÎNTOTDEAUNA feminine</strong>.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                    <th>Terminație</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Eleganz</td><td>eleganța</td><td>-anz</td></tr>
+                                <tr><td>die Toleranz</td><td>toleranța</td><td>-anz</td></tr>
+                                <tr><td>die Distanz</td><td>distanța</td><td>-anz</td></tr>
+                                <tr><td>die Intelligenz</td><td>inteligența</td><td>-enz</td></tr>
+                                <tr><td>die Kompetenz</td><td>competența</td><td>-enz</td></tr>
+                                <tr><td>die Existenz</td><td>existența</td><td>-enz</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/11-terminatie-anz-enz.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -anz/-enz</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIA -TÄT / -ITÄT -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -tät / -ität (100% feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Substantivele terminate în <strong>-tät</strong> sau <strong>-ität</strong> sunt 
+                        <strong style="color: #10b981;">ÎNTOTDEAUNA feminine</strong>.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Universität</td><td>universitatea</td></tr>
+                                <tr><td>die Qualität</td><td>calitatea</td></tr>
+                                <tr><td>die Identität</td><td>identitatea</td></tr>
+                                <tr><td>die Nationalität</td><td>naționalitatea</td></tr>
+                                <tr><td>die Elektrizität</td><td>electricitatea</td></tr>
+                                <tr><td>die Realität</td><td>realitatea</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/12-terminatie-tat.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -tät</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIA -IK -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -ik (MAJORITATEA feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Majoritatea substantivelor terminate în <strong>-ik</strong> sunt feminine, 
+                        în special domenii științifice.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Musik</td><td>muzica</td></tr>
+                                <tr><td>die Mathematik</td><td>matematica</td></tr>
+                                <tr><td>die Physik</td><td>fizica</td></tr>
+                                <tr><td>die Logik</td><td>logica</td></tr>
+                                <tr><td>die Technik</td><td>tehnica</td></tr>
+                                <tr><td>die Politik</td><td>politica</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="warning-box">
+                        <strong>⚠️ Excepții importante:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>der Katholik (catolicul - persoană)</li>
+                            <li>der Atlantik (Oceanul Atlantic)</li>
+                            <li>der Pazifik (Oceanul Pacific)</li>
+                            <li>das Mosaik (mozaicul)</li>
+                            <li>das Plastik (plasticul)</li>
+                        </ul>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/13-terminatie-ik.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -ik</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERMINAȚIA -UR -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Terminația -ur (MAJORITATEA feminine)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p>
+                        Majoritatea substantivelor terminate în <strong>-ur</strong> sunt feminine.
+                    </p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Natur</td><td>natura</td></tr>
+                                <tr><td>die Kultur</td><td>cultura</td></tr>
+                                <tr><td>die Literatur</td><td>literatura</td></tr>
+                                <tr><td>die Reparatur</td><td>reparația</td></tr>
+                                <tr><td>die Architektur</td><td>arhitectura</td></tr>
+                                <tr><td>die Flur</td><td>câmpia (suprafață)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="warning-box">
+                        <strong>⚠️ Excepții:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>das Abitur (bacalaureatul)</li>
+                            <li>das Futur (viitorul - timp verbal)</li>
+                            <li>der Purpur (purpura)</li>
+                            <li>der Flur (holul casei)</li>
+                        </ul>
+                    </div>
+
+                    <button class="audio-btn" onclick="playAudio('audio/14-terminatie-ur.mp3', this)">
+                        <span>🔊</span>
+                        <span>Pronunție -ur</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECȚIUNE EXERCIȚII -->
+        <div class="section" id="exercitii">
+            <h2>ʚଓ Exerciții Practice</h2>
+
+            <div class="info-box">
+                <strong>📝 Instrucțiuni:</strong> Completează exercițiile de mai jos. 
+                După fiecare exercițiu, apasă <strong>"Verifică răspunsurile"</strong> pentru a vedea rezultatul. 
+                Poți reseta exercițiul oricând cu butonul <strong>"Resetează"</strong>.
+            </div>
+
+            <!-- EXERCIȚIUL 1 - ÎN DROPDOWN -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Exercițiul 1: Identifică terminația (10 întrebări)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p style="margin-bottom: 20px;">Scrie terminația specifică pentru fiecare substantiv (de exemplu: -heit, -keit, -ung):</p>
+
+                    <div class="question">
+                        <label>1. Freiheit (libertatea) → Terminație:</label>
+                        <input type="text" id="ex1_q1" data-answer="-heit">
+                    </div>
+
+                    <div class="question">
+                        <label>2. Freundschaft (prietenia) → Terminație:</label>
+                        <input type="text" id="ex1_q2" data-answer="-schaft">
+                    </div>
+
+                    <div class="question">
+                        <label>3. Hoffnung (speranța) → Terminație:</label>
+                        <input type="text" id="ex1_q3" data-answer="-ung">
+                    </div>
+
+                    <div class="question">
+                        <label>4. Nation (națiunea) → Terminație:</label>
+                        <input type="text" id="ex1_q4" data-answer="-ion">
+                    </div>
+
+                    <div class="question">
+                        <label>5. Eleganz (eleganța) → Terminație:</label>
+                        <input type="text" id="ex1_q5" data-answer="-anz">
+                    </div>
+
+                    <div class="question">
+                        <label>6. Universität (universitatea) → Terminație:</label>
+                        <input type="text" id="ex1_q6" data-answer="-tät">
+                    </div>
+
+                    <div class="question">
+                        <label>7. Musik (muzica) → Terminație:</label>
+                        <input type="text" id="ex1_q7" data-answer="-ik">
+                    </div>
+
+                    <div class="question">
+                        <label>8. Literatur (literatura) → Terminație:</label>
+                        <input type="text" id="ex1_q8" data-answer="-ur">
+                    </div>
+
+                    <div class="question">
+                        <label>9. Bäckerei (brutăria) → Terminație:</label>
+                        <input type="text" id="ex1_q9" data-answer="-ei">
+                    </div>
+
+                    <div class="question">
+                        <label>10. Pünktlichkeit (punctualitatea) → Terminație:</label>
+                        <input type="text" id="ex1_q10" data-answer="-keit">
+                    </div>
+
+                    <!-- BUTOANE VERIFICARE EXERCIȚIUL 1 -->
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="verifyEx1()">
+                            ✓ Verifică răspunsurile
+                        </button>
+                        <button class="btn btn-secondary" onclick="resetEx1()">
+                            ↻ Resetează
+                        </button>
+                    </div>
+
+                    <!-- FEEDBACK EXERCIȚIUL 1 -->
+                    <div class="feedback" id="feedback-ex1"></div>
+                </div>
+            </div>
+
+            <!-- EXERCIȚIUL 2 - ÎN DROPDOWN -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Exercițiul 2: Completează articolul (10 întrebări)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p style="margin-bottom: 20px;">Completează cu articolul corect (<strong>die</strong> / der / das):</p>
+
+                    <div class="question">
+                        <label>1. ______ Gesundheit (sănătatea)</label>
+                        <input type="text" id="ex2_q1" data-answer="die">
+                    </div>
+
+                    <div class="question">
+                        <label>2. ______ Dankbarkeit (recunoștința)</label>
+                        <input type="text" id="ex2_q2" data-answer="die">
+                    </div>
+
+                    <div class="question">
+                        <label>3. ______ Zeitung (ziarul)</label>
+                        <input type="text" id="ex2_q3" data-answer="die">
+                    </div>
+
+                    <div class="question">
+                        <label>4. ______ Wissenschaft (știința)</label>
+                        <input type="text" id="ex2_q4" data-answer="die">
+                    </div>
+
+                    <div class="question">
+                        <label>5. ______ Konditorei (cofetăria)</label>
+                        <input type="text" id="ex2_q5" data-answer="die">
+                    </div>
+
+                    <div class="question">
+                        <label>6. ______ Lektion (lecția)</label>
+                        <input type="text" id="ex2_q6" data-answer="die">
+                    </div>
+
+                    <div class="question">
+                        <label>7. ______ Intelligenz (inteligența)</label>
+                        <input type="text" id="ex2_q7" data-answer="die">
+                    </div>
+
+                    <div class="question">
+                        <label>8. ______ Junge (băiatul) - EXCEPȚIE!</label>
+                        <input type="text" id="ex2_q8" data-answer="der">
+                    </div>
+
+                    <div class="question">
+                        <label>9. ______ Auge (ochiul) - EXCEPȚIE!</label>
+                        <input type="text" id="ex2_q9" data-answer="das">
+                    </div>
+
+                    <div class="question">
+                        <label>10. ______ Kultur (cultura)</label>
+                        <input type="text" id="ex2_q10" data-answer="die">
+                    </div>
+
+                    <!-- BUTOANE VERIFICARE EXERCIȚIUL 2 -->
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="verifyEx2()">
+                            ✓ Verifică răspunsurile
+                        </button>
+                        <button class="btn btn-secondary" onclick="resetEx2()">
+                            ↻ Resetează
+                        </button>
+                    </div>
+
+                    <!-- FEEDBACK EXERCIȚIUL 2 -->
+                    <div class="feedback" id="feedback-ex2"></div>
+                </div>
+            </div>
+
+            <!-- EXERCIȚIUL 3 - ÎN DROPDOWN -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Exercițiul 3: Formează substantive (8 întrebări)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <p style="margin-bottom: 20px;">Formează substantive feminine din următoarele adjective sau verbe. Scrie DOAR substantivul cu articol (ex: die Freiheit):</p>
+
+                    <div class="question">
+                        <label>1. frei (liber) →</label>
+                        <input type="text" id="ex3_q1" data-answer="die Freiheit">
+                    </div>
+
+                    <div class="question">
+                        <label>2. dumm (prost) →</label>
+                        <input type="text" id="ex3_q2" data-answer="die Dummheit">
+                    </div>
+
+                    <div class="question">
+                        <label>3. möglich (posibil) →</label>
+                        <input type="text" id="ex3_q3" data-answer="die Möglichkeit">
+                    </div>
+
+                    <div class="question">
+                        <label>4. hoffen (a spera) →</label>
+                        <input type="text" id="ex3_q4" data-answer="die Hoffnung">
+                    </div>
+
+                    <div class="question">
+                        <label>5. kleiden (a îmbrăca) →</label>
+                        <input type="text" id="ex3_q5" data-answer="die Kleidung">
+                    </div>
+
+                    <div class="question">
+                        <label>6. prüfen (a examina) →</label>
+                        <input type="text" id="ex3_q6" data-answer="die Prüfung">
+                    </div>
+
+                    <div class="question">
+                        <label>7. freundlich (prietenos) →</label>
+                        <input type="text" id="ex3_q7" data-answer="die Freundlichkeit">
+                    </div>
+
+                    <div class="question">
+                        <label>8. elegant (elegant) →</label>
+                        <input type="text" id="ex3_q8" data-answer="die Eleganz">
+                    </div>
+
+                    <!-- BUTOANE VERIFICARE EXERCIȚIUL 3 -->
+                    <div class="btn-group">
+                        <button class="btn btn-primary" onclick="verifyEx3()">
+                            ✓ Verifică răspunsurile
+                        </button>
+                        <button class="btn btn-secondary" onclick="resetEx3()">
+                            ↻ Resetează
+                        </button>
+                    </div>
+
+                    <!-- FEEDBACK EXERCIȚIUL 3 -->
+                    <div class="feedback" id="feedback-ex3"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECȚIUNE VOCABULAR -->
+        <div class="section" id="vocabular">
+            <h2>ʚଓ Vocabular Complet</h2>
+
+            <p style="margin-bottom: 20px;">
+                Mai jos găsești peste <strong>150 de substantive feminine</strong> organizate pe terminații. 
+                Memorează-le treptat și revino periodic pentru revizuire!
+            </p>
+
+            <button class="audio-btn" onclick="playAudio('audio/15-vocabular-complet.mp3', this)">
+                <span>🔊</span>
+                <span>Ascultă vocabularul complet</span>
+            </button>
+
+            <!-- Vocabular -heit -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Substantive cu -heit (10 cuvinte)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Dummheit</td><td>prostia</td></tr>
+                                <tr><td>die Dunkelheit</td><td>întunericul</td></tr>
+                                <tr><td>die Freiheit</td><td>libertatea</td></tr>
+                                <tr><td>die Gesundheit</td><td>sănătatea</td></tr>
+                                <tr><td>die Gewohnheit</td><td>obișnuința</td></tr>
+                                <tr><td>die Schönheit</td><td>frumusețea</td></tr>
+                                <tr><td>die Weisheit</td><td>înțelepciunea</td></tr>
+                                <tr><td>die Krankheit</td><td>boala</td></tr>
+                                <tr><td>die Wahrheit</td><td>adevărul</td></tr>
+                                <tr><td>die Kindheit</td><td>copilăria</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <button class="audio-btn" onclick="playAudio('audio/16-vocab-heit.mp3', this)">
+                        <span>🔊</span>
+                        <span>Ascultă vocabularul -heit</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Vocabular -keit -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Substantive cu -keit / -igkeit (10 cuvinte)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Aufmerksamkeit</td><td>atenția</td></tr>
+                                <tr><td>die Dankbarkeit</td><td>recunoștința</td></tr>
+                                <tr><td>die Flüssigkeit</td><td>lichidul</td></tr>
+                                <tr><td>die Pünktlichkeit</td><td>punctualitatea</td></tr>
+                                <tr><td>die Tätigkeit</td><td>activitatea</td></tr>
+                                <tr><td>die Möglichkeit</td><td>posibilitatea</td></tr>
+                                <tr><td>die Geschwindigkeit</td><td>viteza</td></tr>
+                                <tr><td>die Schwierigkeit</td><td>dificultatea</td></tr>
+                                <tr><td>die Fähigkeit</td><td>capacitatea</td></tr>
+                                <tr><td>die Gelegenheit</td><td>ocazia</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <button class="audio-btn" onclick="playAudio('audio/17-vocab-keit.mp3', this)">
+                        <span>🔊</span>
+                        <span>Ascultă vocabularul -keit</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Vocabular -ung -->
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this)">
+                    <span>ʚଓ Substantive cu -ung (15 cuvinte)</span>
+                    <span class="dropdown-arrow">▼</span>
+                </div>
+                <div class="dropdown-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Germană</th>
+                                    <th>Română</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>die Hoffnung</td><td>speranța</td></tr>
+                                <tr><td>die Kleidung</td><td>îmbrăcămintea</td></tr>
+                                <tr><td>die Lösung</td><td>soluția</td></tr>
+                                <tr><td>die Ordnung</td><td>ordinea</td></tr>
+                                <tr><td>die Prüfung</td><td>examenul</td></tr>
+                                <tr><td>die Zeitung</td><td>ziarul</td></tr>
+                                <tr><td>die Wohnung</td><td>apartamentul</td></tr>
+                                <tr><td>die Übung</td><td>exercițiul</td></tr>
+                                <tr><td>die Bedeutung</td><td>semnificația</td></tr>
+                                <tr><td>die Entschuldigung</td><td>scuza</td></tr>
+                                <tr><td>die Erfahrung</td><td>experiența</td></tr>
+                                <tr><td>die Meinung</td><td>opinia</td></tr>
+                                <tr><td>die Rechnung</td><td>factura</td></tr>
+                                <tr><td>die Werbung</td><td>publicitatea</td></tr>
+                                <tr><td>die Verantwortung</td><td>responsabilitatea</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <button class="audio-btn" onclick="playAudio('audio/18-vocab-ung.mp3', this)">
+                        <span>🔊</span>
+                        <span>Ascultă vocabularul -ung</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Link la PDF pentru vocabular complet -->
+            <div class="info-box" style="margin-top: 30px;">
+                <strong>📄 Vocabular complet:</strong> 
+                Pentru lista completă cu toate cele 150+ substantive feminine, 
+                <a href="genul-feminin.pdf" download style="color: #10b981; font-weight: bold;">descarcă PDF-ul lecției</a>.
+            </div>
+
+        </div>
+
+        <!-- SECȚIUNE FINALĂ -->
+        <div class="final-section">
+            <h2>ʚଓ Felicitări! Ai terminat lecția!</h2>
+            
+            <p style="font-size: 18px; color: #6b7280; margin: 20px 0;">
+                Continuă să exersezi pentru a consolida cunoștințele!
+            </p>
+
+            <div class="final-links">
+                <a href="flashcards.html" class="final-link">ʚଓ Flashcards</a>
+                <a href="../werden/test-final.html" class="final-link">ʚଓ Test Final</a>
+                <a href="https://yaz5dfqyx89.typeform.com/to/IOLr1UEI" target="_blank" class="final-link">ʚଓ Sondaj Feedback</a>
+            </div>
+
+            <div class="footer-message">
+                Mult succes la învățare! ☀️
+            </div>
+            
+            <div class="copyright">
+                © 2026 Claudia Toth - Curs autorizat de limba germană
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+        ↑
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // ========== AUDIO MANAGEMENT ==========
+        let currentAudio = null;
+
+        function playAudio(file, button) {
+            // Stop current audio if playing
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                
+                // Reset all buttons to 🔊
+                const allButtons = document.querySelectorAll('.audio-btn span:first-child');
+                allButtons.forEach(btn => btn.textContent = '🔊');
+            }
+
+            // If clicking the same button, just stop
+            const icon = button.querySelector('span:first-child');
+            if (currentAudio && currentAudio.src.includes(file) && icon.textContent === '⏸️') {
+                icon.textContent = '🔊';
+                currentAudio = null;
+                return;
+            }
+
+            // Play new audio
+            currentAudio = new Audio(file);
+            icon.textContent = '⏸️';
+            
+            currentAudio.play();
+            
+            currentAudio.onended = function() {
+                icon.textContent = '🔊';
+                currentAudio = null;
+            };
+        }
+
+        // ========== MENU TOGGLE ==========
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+
+        // ========== DROPDOWN TOGGLE ==========
+        function toggleDropdown(header) {
+            const dropdown = header.parentElement;
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('.dropdown-arrow');
+            
+            content.classList.toggle('active');
+            arrow.classList.toggle('active');
+        }
+
+        // ========== SCROLL TO TOP ==========
+        window.onscroll = function() {
+            const btn = document.getElementById('scrollToTop');
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = 'flex';
+            } else {
+                btn.style.display = 'none';
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // ========== VERIFY ANSWERS EXERCIȚIUL 1 ==========
+        function verifyEx1() {
+            const inputs = document.querySelectorAll('#ex1_q1, #ex1_q2, #ex1_q3, #ex1_q4, #ex1_q5, #ex1_q6, #ex1_q7, #ex1_q8, #ex1_q9, #ex1_q10');
+            let correct = 0;
+            let total = 0;
+
+            inputs.forEach(inp => {
+                const userAnswer = inp.value.trim();
+                const correctAnswer = inp.dataset.answer;
+                
+                // Remove previous feedback
+                const prevFeedback = inp.parentElement.querySelector('.correct-answer');
+                if (prevFeedback) prevFeedback.remove();
+
+                if (!userAnswer) return;
+                
+                total++;
+
+                // Autocorrect: case-insensitive comparison
+                if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                    inp.classList.remove('incorrect');
+                    inp.classList.add('correct');
+                    correct++;
+                } else {
+                    inp.classList.remove('correct');
+                    inp.classList.add('incorrect');
+                    
+                    // Show correct answer below
+                    const feedback = document.createElement('div');
+                    feedback.className = 'correct-answer';
+                    feedback.textContent = `Corect: ${correctAnswer}`;
+                    inp.parentElement.appendChild(feedback);
+                }
+            });
+
+            // Show feedback
+            const fb = document.getElementById('feedback-ex1');
+            const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
+            
+            fb.style.position = 'sticky';
+            fb.style.top = '80px';
+            fb.style.zIndex = '100';
+            
+            if (percentage >= 80) {
+                fb.className = 'feedback success';
+                fb.innerHTML = `🎉 <strong>Felicitări!</strong> Ai obținut ${correct} din ${total} răspunsuri corecte (${percentage}%)!`;
+            } else if (percentage >= 50) {
+                fb.className = 'feedback error';
+                fb.innerHTML = `💪 <strong>Bine!</strong> Ai obținut ${correct} din ${total} răspunsuri corecte (${percentage}%). Încearcă din nou!`;
+            } else {
+                fb.className = 'feedback error';
+                fb.innerHTML = `ʚଓ <strong>Mai încearcă!</strong> Ai obținut ${correct} din ${total} răspunsuri corecte (${percentage}%). Revizuiește teoria!`;
+            }
+
+            fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // ========== RESET EXERCISE 1 ==========
+        function resetEx1() {
+            const inputs = document.querySelectorAll('#ex1_q1, #ex1_q2, #ex1_q3, #ex1_q4, #ex1_q5, #ex1_q6, #ex1_q7, #ex1_q8, #ex1_q9, #ex1_q10');
+            inputs.forEach(inp => {
+                inp.value = '';
+                inp.classList.remove('correct', 'incorrect');
+                inp.style.borderColor = '#e5e7eb';
+                inp.style.background = 'white';
+                
+                const feedback = inp.parentElement.querySelector('.correct-answer');
+                if (feedback) feedback.remove();
+            });
+
+            const fb = document.getElementById('feedback-ex1');
+            fb.className = 'feedback';
+            fb.style.display = 'none';
+        }
+
+        // ========== VERIFY ANSWERS EXERCIȚIUL 2 ==========
+        function verifyEx2() {
+            const inputs = document.querySelectorAll('#ex2_q1, #ex2_q2, #ex2_q3, #ex2_q4, #ex2_q5, #ex2_q6, #ex2_q7, #ex2_q8, #ex2_q9, #ex2_q10');
+            let correct = 0;
+            let total = 0;
+
+            inputs.forEach(inp => {
+                const userAnswer = inp.value.trim();
+                const correctAnswer = inp.dataset.answer;
+                
+                const prevFeedback = inp.parentElement.querySelector('.correct-answer');
+                if (prevFeedback) prevFeedback.remove();
+
+                if (!userAnswer) return;
+                
+                total++;
+
+                if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                    inp.classList.remove('incorrect');
+                    inp.classList.add('correct');
+                    correct++;
+                } else {
+                    inp.classList.remove('correct');
+                    inp.classList.add('incorrect');
+                    
+                    const feedback = document.createElement('div');
+                    feedback.className = 'correct-answer';
+                    feedback.textContent = `Corect: ${correctAnswer}`;
+                    inp.parentElement.appendChild(feedback);
+                }
+            });
+
+            const fb = document.getElementById('feedback-ex2');
+            const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
+            
+            fb.style.position = 'sticky';
+            fb.style.top = '80px';
+            fb.style.zIndex = '100';
+            
+            if (percentage >= 80) {
+                fb.className = 'feedback success';
+                fb.innerHTML = `🎉 <strong>Felicitări!</strong> Ai obținut ${correct} din ${total} răspunsuri corecte (${percentage}%)!`;
+            } else if (percentage >= 50) {
+                fb.className = 'feedback error';
+                fb.innerHTML = `💪 <strong>Bine!</strong> Ai obținut ${correct} din ${total} răspunsuri corecte (${percentage}%). Încearcă din nou!`;
+            } else {
+                fb.className = 'feedback error';
+                fb.innerHTML = `ʚଓ <strong>Mai încearcă!</strong> Ai obținut ${correct} din ${total} răspunsuri corecte (${percentage}%). Revizuiește teoria!`;
+            }
+
+            fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // ========== RESET EXERCISE 2 ==========
+        function resetEx2() {
+            const inputs = document.querySelectorAll('#ex2_q1, #ex2_q2, #ex2_q3, #ex2_q4, #ex2_q5, #ex2_q6, #ex2_q7, #ex2_q8, #ex2_q9, #ex2_q10');
+            inputs.forEach(inp => {
+                inp.value = '';
+                inp.classList.remove('correct', 'incorrect');
+                inp.style.borderColor = '#e5e7eb';
+                inp.style.background = 'white';
+                
+                const feedback = inp.parentElement.querySelector('.correct-answer');
+                if (feedback) feedback.remove();
+            });
+
+            const fb = document.getElementById('feedback-ex2');
+            fb.className = 'feedback';
+            fb.style.display = 'none';
+        }
+
+        // ========== VERIFY ANSWERS EXERCIȚIUL 3 ==========
+        function verifyEx3() {
+            const inputs = document.querySelectorAll('#ex3_q1, #ex3_q2, #ex3_q3, #ex3_q4, #ex3_q5, #ex3_q6, #ex3_q7, #ex3_q8');
+            let correct = 0;
+            let total = 0;
+
+            inputs.forEach(inp => {
+                const userAnswer = inp.value.trim();
+                const correctAnswer = inp.dataset.answer;
+                
+                const prevFeedback = inp.parentElement.querySelector('.correct-answer');
+                if (prevFeedback) prevFeedback.remove();
+
+                if (!userAnswer) return;
+                
+                total++;
+
+                if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+                    inp.classList.remove('incorrect');
+                    inp.classList.add('correct');
+                    correct++;
+                } else {
+                    inp.classList.remove('correct');
+                    inp.classList.add('incorrect');
+                    
+                    const feedback = document.createElement('div');
+                    feedback.className = 'correct-answer';
+                    feedback.textContent = `Corect: ${correctAnswer}`;
+                    inp.parentElement.appendChild(feedback);
+                }
+            });
+
+            const fb = document.getElementById('feedback-ex3');
+            const percentage = total > 0 ? Math.round((correct / total) * 100) : 0;
+            
+            fb.style.position = 'sticky';
+            fb.style.top = '80px';
+            fb.style.zIndex = '100';
+            
+            if (percentage >= 80) {
+                fb.className = 'feedback success';
+                fb.innerHTML = `🎉 <strong>Felicitări!</strong> Ai obținut ${correct} din ${total} răspunsuri corecte (${percentage}%)!`;
+            } else if (percentage >= 50) {
+                fb.className = 'feedback error';
+                fb.innerHTML = `💪 <strong>Bine!</strong> Ai obținut ${correct} din ${total} răspunsuri corecte (${percentage}%). Încearcă din nou!`;
+            } else {
+                fb.className = 'feedback error';
+                fb.innerHTML = `ʚଓ <strong>Mai încearcă!</strong> Ai obținut ${correct} din ${total} răspunsuri corecte (${percentage}%). Revizuiește teoria!`;
+            }
+
+            fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // ========== RESET EXERCISE 3 ==========
+        function resetEx3() {
+            const inputs = document.querySelectorAll('#ex3_q1, #ex3_q2, #ex3_q3, #ex3_q4, #ex3_q5, #ex3_q6, #ex3_q7, #ex3_q8');
+            inputs.forEach(inp => {
+                inp.value = '';
+                inp.classList.remove('correct', 'incorrect');
+                inp.style.borderColor = '#e5e7eb';
+                inp.style.background = 'white';
+                
+                const feedback = inp.parentElement.querySelector('.correct-answer');
+                if (feedback) feedback.remove();
+            });
+
+            const fb = document.getElementById('feedback-ex3');
+            fb.className = 'feedback';
+            fb.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
